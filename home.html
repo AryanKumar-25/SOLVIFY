@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solvify</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: radial-gradient(circle at center, #0d0d0d, #000);
+      color: #fff;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Navbar */
+    nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    nav .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    nav .logo img {
+      height: 40px;  /* Icon size */
+      width: auto;
+    }
+
+    nav .logo span {
+      font-size: 1.5rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #9d4edd, #00d4ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #00d4ff;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, #e100ff, #00d4ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 25px rgba(255, 0, 200, 0.5);
+    }
+
+    .hero h2 {
+      margin-top: 15px;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #ddd;
+    }
+
+    .hero p {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #aaa;
+    }
+
+    .hero .btn {
+      margin-top: 30px;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 30px;
+      background: linear-gradient(90deg, #9d4edd, #00d4ff);
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hero .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(0, 212, 255, 0.9);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <!-- Replace logo.png with your puzzle icon -->
+      <img src="logo.png" alt="Solvify Icon" />
+      <span>SOLVIFY</span>
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Solvify</h1>
+    <h2>Transforming Ideas into Digital Reality</h2>
+    <p>Your Partner in Web Development, Cloud Solutions, AI/ML, and DevOps Excellence</p>
+    <button class="btn">Explore Our Services</button>
+  </section>
+</body>
+</html>
+ <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3><a href="https://www.linkedin.com/posts/solvify-club-nmit_solvify-bytebattle-anaadyanta2025-activity-7315257629411270657-krQJ?utm_source=share&utm_medium=member_android&rcm=ACoAAFnY5_MBWK_qYf2rgRfOQ9XrmLyTrSttyIQ"title="ByteBattle 2.0 ">ByteBattle 2.0</a></h3>
+                    <p>Creating robust and scalable web applications tailored to your needs.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Cloud Solutions</h3>
+                    <p>Leveraging the power of AWS, Azure, and Google Cloud for your business.</p>
+                </div>
+                <div class="service-card">
+                    <h3>AI & Machine Learning</h3>
+                    <p>Implementing intelligent solutions to drive growth and efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    /* Services Section */
+.services {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    color: #f0e007;
+    margin-top: 0;
+}
+/* --- Team Section Styles --- */

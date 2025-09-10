@@ -1,0 +1,205 @@
+/* Basic Reset and Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+    color: #0e0d0d; /* A nice blue color */
+    
+    /* Add these lines to align image and text */
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    /* Set the height of your icon */
+    height: 30px; 
+    /* Add some space between the icon and the text */
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f0e007;
+    color: rgb(15, 15, 15);
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.75em;
+    margin-bottom: 30px;
+    color: rgb(12, 12, 12);
+}
+
+.cta-button {
+    background-color: #ffffff;
+    color: #0c0c0c;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e2e6ea;
+}
+
+/* --- Events Section Styles --- */
+
+.events {
+    padding: 80px 0;
+    background-color: #f4f7f6; /* A light grey background to stand out */
+    text-align: center;
+}
+
+.events h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Responsive grid */
+    gap: 30px;
+    text-align: left;
+}
+
+.event-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden; /* Ensures the image corners are rounded */
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px); /* Lifts the card slightly on hover */
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-card h3 {
+    font-size: 1.5em;
+    margin: 20px 20px 10px 20px;
+}
+
+.event-card h3 a {
+    text-decoration: none;
+    color: #e4e00d; /* Your theme's primary blue color */
+}
+
+.event-card h3 a:hover {
+    text-decoration: underline;
+}
+
+.event-card p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    margin: 0 20px 20px 20px;
+}
+.team {
+    padding: 80px 0;
+    background-color: #ffffff; /* A clean white background to separate it from other sections */
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.team-grid {
+    display: flex; /* This is the key to creating the horizontal layout */
+    justify-content: center; /* This centers the team members in the container */
+    flex-wrap: wrap; /* Allows members to wrap to the next line on smaller screens */
+    gap: 40px; /* This creates a nice space between each team member card */
+}
+
+.team-member {
+    /* Each member card will have a max-width to look neat */
+    max-width: 200px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* This makes the images perfectly circular */
+    object-fit: cover; /* Prevents the image from being stretched or distorted */
+    border: 5px solid #f4f7f6; /* Adds a subtle border around the photo */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.team-member h3 {
+    font-size: 1.4em;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    color: #777; /* A lighter color for the role/title */
+    margin: 0;
+}
+/* --- Style for hiding the play button after click --- */
+
+
+
+/* Footer */
+.footer {
+    background-color: #f1f52a;
+    color: rgb(12, 12, 12);
+    text-align: center;
+    padding: 20px 0;
+}
